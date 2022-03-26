@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>Gride Maker</title> 
+        <link rel="stylesheet" href="styles.css">
+</head>   
+<body>
+    <button onclick = "addRow()">Add Row</button>
+    <button onclick = "addCol()">Add Col</button>
+    <button onclick = "deleteRow()">Delete Row</button>
+    <button onclick = "deleteCol()">Delete Col</button>
+    <button onclick = "fillUncolored()">Fill Uncolored</button>
+    <button onclick = "fillAll()">Fill All</button>
+    <button onclick = "clear()">Clear</button>
+    <select onchange="selected()" id="selectedColorId">
+        <option value="SELECT">SELECT</option>
+        <option value="Orange">Orange</option>
+        <option value="Purple">Purple</option>
+        <option value="Blue">Blue</option>
+        <option value="Red">Red</option>
+        <option value="Maroon">Maroon</option>
+    </select>
+    <table id="grid"></table>
+    <script src="script.js"></script>
+</body>
+</html>
